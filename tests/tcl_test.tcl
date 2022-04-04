@@ -1,0 +1,1 @@
+[value [topnode this.input0].name][exists parent.[string tolower [value [topnode this.input1].name]]]
