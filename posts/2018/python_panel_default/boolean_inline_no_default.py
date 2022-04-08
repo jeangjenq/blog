@@ -1,0 +1,1 @@
+nuke.Boolean_Knob('checkReadGeo', 'Exclude ReadGeo nodes', '0')
