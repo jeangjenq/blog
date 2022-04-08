@@ -9,5 +9,4 @@ for root, directories, filenames in os.walk('E:\Onedrive'):
 
 for a in l:
     args = 'fsutil reparsepoint delete "' + a + '"'
-    start = "start cmd /k " + '"' + args + '"'
-    os.popen(start)
+    os.popen(args)
