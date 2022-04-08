@@ -1,12 +1,14 @@
 import os
+from subprocess import call
 
-l = []
-for root, directories, filenames in os.walk('E:\Onedrive'):
+#gather a list of files/directories/subdirectories
+list = []
+for root, directories, filenames in os.environ['OneDrive']:
     for directory in directories:
-        l.append(os.path.join(root, directory))
+        list.append(os.path.join(root, directory))
     for filename in filenames:
-        l.append(os.path.join(root, filename))
+        list.append(os.path.join(root, filename))
 
-for a in l:
-    args = 'fsutil reparsepoint delete "' + a + '"'
-    os.popen(args)
+#run 'fsutil reparsepoint delete #filename' for every thing in the list
+for file in list:
+    call(["fsutil", "reparsepoint", "delete", file])
