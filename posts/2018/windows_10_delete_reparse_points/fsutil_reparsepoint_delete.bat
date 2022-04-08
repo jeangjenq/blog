@@ -1,0 +1,1 @@
+fsutil reparsepoint delete "C:\Path\To\OneDrive\Folder"

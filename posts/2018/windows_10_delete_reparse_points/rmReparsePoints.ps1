@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse -Attributes Reparsepoint | % { $n = $_.FullName.Trim(“\”); fsutil reparsepoint delete “$n” }
