@@ -1,0 +1,1 @@
+p = nukescripts.PythonPanel('Change localization')
