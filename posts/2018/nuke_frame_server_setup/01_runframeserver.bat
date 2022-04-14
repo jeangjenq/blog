@@ -1,0 +1,2 @@
+cd /d C:\apps\nuke\11.0v3
+python.exe .\pythonextensions\site-packages\foundry\frameserver\nuke\runframeserver.py --numworkers 2 --nukeworkerthreads 4 --nukeworkermemory 16192 --workerconnecturl tcp://2017C018:5560 --nukepath=Nuke11.0.exe --useInteractiveLicense 
