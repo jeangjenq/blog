@@ -1,1 +1,2 @@
-yum --enablerepo=extras install epel-releaseyum install ntfs-3g fuse
+yum --enablerepo=extras install epel-release
+yum install ntfs-3g fuse
