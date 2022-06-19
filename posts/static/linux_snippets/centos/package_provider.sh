@@ -1,0 +1,1 @@
+yum provides vlc # vlc as example

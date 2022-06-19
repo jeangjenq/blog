@@ -1,0 +1,1 @@
+yum deplist vlc # vlc as example, package name last
